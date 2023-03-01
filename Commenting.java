@@ -39,7 +39,11 @@ public class Commenting {
         case f:
       }
     }
-    System.out.println("The input string "+ (current == States.e ? "is ": "ISN'T ") +"valid");
+    if(current == States.e) {
+      System.out.println("The comment is valid");
+    } else {
+      System.out.println("The comment is NOT valid");
+    }
   }
 }
 
